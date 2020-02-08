@@ -3,12 +3,28 @@ public class attendee {
    private String degree;
    private double GPA;
    private String email;
+   private String gradDate;
+   private String aspiration;
 
-   public attendee (String nameIn, String degreeIn, String emailIn, double GPAIn) {
-      name = nameIn;
-      degree = degreeIn;
-      GPA = GPAIn;
-      email = emailIn;
+   public attendee (String nameIn, String degreeIn, String emailIn, double GPAIn, String gradDateIn, String aspirationIn) {
+      name = setName(nameIn);
+      degree = setDegree(degreeIn);
+      GPA = setGPA(GPAIn);
+      email = setEmail(emailIn);
+      gradDate = setGradDate(gradDateIn);
+      aspiration = setAspiration(aspirationIn);
+   }
+   public void setAspiration(String asperationIn){
+      aspiration = aspirationIn;
+   }
+   public String getAspiration(){
+      return aspiration;
+   }
+   public String getGradDate(){
+      return gradDate;
+   }
+   public void setGradDate(String gradDateIn){
+      gradDate = gradDateIn;
    }
 
    public void setName(String nameIn) {
