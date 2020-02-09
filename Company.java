@@ -6,11 +6,11 @@ public class Company {
 	private String jobReq;
 
 	public Company(String nameIn, String websiteIn, String descriptionIn, String jobIn, String jobReqIn) {
-		name = setName(nameIn);
-		website = setName(websiteIn);
-		description = setDescription(descriptionIn);
-		job = setJob(jobIn);
-		jobReq = setJobReq(jobReqIn);
+		setName(nameIn);
+		setName(websiteIn);
+		setDescription(descriptionIn);
+		setJob(jobIn);
+		setJobReq(jobReqIn);
 	}
 	public void setName(String nameIn) {
 		name = nameIn;
